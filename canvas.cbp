@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Canvas C++" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../__bin/Debug/canvas" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="../__obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../__bin/Release/canvas" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="../__obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-O2 -Wall" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add library="../lib/libglu32.a" />
+			<Add library="../lib/libopengl32.a" />
+			<Add library="../lib/freeglut.lib" />
+		</Linker>
+		<Unit filename="include/GL/freeglut.h" />
+		<Unit filename="include/GL/freeglut_ext.h" />
+		<Unit filename="include/GL/freeglut_std.h" />
+		<Unit filename="include/GL/glut.h" />
+		<Unit filename="src/3D/Camera.cpp" />
+		<Unit filename="src/3D/Camera.h" />
+		<Unit filename="src/3D/Mesh.h" />
+		<Unit filename="src/3D/MeshGenerator.cpp" />
+		<Unit filename="src/3D/MeshGenerator.h" />
+		<Unit filename="src/3D/Surface2.h" />
+		<Unit filename="src/Basic/Color.h" />
+		<Unit filename="src/Basic/ColoredShape.cpp" />
+		<Unit filename="src/Basic/ColoredShape.h" />
+		<Unit filename="src/Basic/Matrix.cpp" />
+		<Unit filename="src/Basic/Matrix.h" />
+		<Unit filename="src/Basic/Matrixes.h" />
+		<Unit filename="src/Basic/Surface.h" />
+		<Unit filename="src/Basic/Vector.cpp" />
+		<Unit filename="src/Basic/Vector.h" />
+		<Unit filename="src/Demos.cpp" />
+		<Unit filename="src/Demos.h" />
+		<Unit filename="src/Engine/2D/Engine.cpp" />
+		<Unit filename="src/Engine/2D/Engine.h" />
+		<Unit filename="src/Engine/2D/Pistao.cpp" />
+		<Unit filename="src/Engine/2D/Pistao.h" />
+		<Unit filename="src/Engine/2D/Virabrequim.cpp" />
+		<Unit filename="src/Engine/2D/Virabrequim.h" />
+		<Unit filename="src/Engine/3D/3dEngineParts.cpp" />
+		<Unit filename="src/Engine/3D/3dEngineParts.h" />
+		<Unit filename="src/Engine/3D/Engine3D.cpp" />
+		<Unit filename="src/Engine/3D/Engine3D.h" />
+		<Unit filename="src/Engine/EngineGroup.cpp" />
+		<Unit filename="src/Engine/EngineGroup.h" />
+		<Unit filename="src/Input.cpp" />
+		<Unit filename="src/Input.h" />
+		<Unit filename="src/Timer/Frames.h" />
+		<Unit filename="src/Timer/Timer.cpp" />
+		<Unit filename="src/Timer/Timer.h" />
+		<Unit filename="src/gl_canvas2d.cpp" />
+		<Unit filename="src/gl_canvas2d.h" />
+		<Unit filename="src/gl_canvas3d.cpp" />
+		<Unit filename="src/gl_canvas3d.h" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
